@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraping Web</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head> 
+<body>
+    <h1>Scraping Web</h1>
+    <form action="/consultar" method="post">
+        <label for="tipo_documento">Tipo de Documento:</label>
+        <select id="tipo_documento" name="tipo_documento">
+            <option value="dni">DNI</option>
+        </select>
+        <br>
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni">
+        <br>
+        <input type="submit" value="Consultar">
+    </form>
+</body>
+</html>
